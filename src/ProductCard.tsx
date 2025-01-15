@@ -54,7 +54,7 @@ const ProductCard = () => {
         {error && <p>{error}</p>}
         {product && (
           <div className="product-info">
-            <img src={product.picture} alt={product.product} className="icon" />
+            <img src={product.picture} alt={product.product} className="pictureproduct-image" />
             <p>Product name:{product.productName}</p>
             <p>Price: {product.price}</p>
             <p>Cqategory: {product.category}</p>
