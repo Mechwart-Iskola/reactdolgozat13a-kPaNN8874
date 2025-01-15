@@ -6,7 +6,7 @@ type Product = {
     category:string,
     image:string;
 };
-const ProductCard = () => {
+const Products = () => {
     const [searchProduct, setSearchProduct] = useState<string>("");
     const [product, setProduct] = useState<Product | null>(null);
     const [error, setError] = useState<string | null>(null);
@@ -56,8 +56,8 @@ const ProductCard = () => {
           <div className="product-info">
             <img src={product.picture} alt={product.product} className="icon" />
             <p>Product name:{product.productName}</p>
-            <p>Price: {product.temperature}</p>
-            <p>Cqategory: {weather.weather}</p>
+            <p>Price: {product.price}</p>
+            <p>Cqategory: {product.category}</p>
           </div>
         )}
       </div>
